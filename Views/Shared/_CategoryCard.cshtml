@@ -1,0 +1,15 @@
+@model CategoryCardViewModel
+
+<a href="@Model.Href" class="group overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <div class="relative flex h-40 items-end overflow-hidden rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 p-4">
+        @if (!string.IsNullOrWhiteSpace(Model.ImageUrl))
+        {
+            <img src="@Model.ImageUrl" alt="@Model.Name" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/25 to-transparent"></div>
+        }
+        <span class="relative rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider @Model.AccentClass">@Model.Label</span>
+    </div>
+    <h3 class="mt-5 text-lg font-black text-slate-950">@Model.Name</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-500">@Model.Description</p>
+    <span class="mt-4 inline-flex text-sm font-bold text-brand-700 transition group-hover:translate-x-1">Xem ngay</span>
+</a>

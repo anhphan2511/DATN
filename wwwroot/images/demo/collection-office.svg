@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title">
+  <title id="title">Bộ sưu tập công sở thường ngày minh họa</title>
+  <rect width="760" height="540" rx="54" fill="#f5f5f4"/>
+  <rect x="80" y="74" width="250" height="370" rx="125" fill="#ffffff"/>
+  <rect x="430" y="74" width="250" height="370" rx="125" fill="#d4f0e2" opacity="0.7"/>
+  <path d="M156 170h160l50 94-52 32-20-42v182H178V254l-20 42-52-32 50-94Z" fill="#e7e5e4" stroke="#a8a29e" stroke-width="8"/>
+  <path d="M462 168h140l26 260h-68l-28-168-28 168h-68l26-260Z" fill="#1e3a8a"/>
+  <text x="380" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111827">CÔNG SỞ CASUAL</text>
+</svg>

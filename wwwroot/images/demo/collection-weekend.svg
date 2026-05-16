@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img" aria-labelledby="title">
+  <title id="title">Bộ sưu tập cuối tuần minh họa</title>
+  <rect width="760" height="540" rx="54" fill="#111827"/>
+  <circle cx="590" cy="110" r="110" fill="#14b86a" opacity="0.28"/>
+  <circle cx="160" cy="430" r="130" fill="#ffffff" opacity="0.08"/>
+  <path d="M180 130h170l64 106-60 38-24-44v202H200V230l-24 44-60-38 64-106Z" fill="#ffffff"/>
+  <path d="M410 342c58 6 113-18 166-78 32 42 68 66 116 66 30 0 54 24 54 54v20H402c-30 0-48-34-30-58 10-14 24-4 38-4Z" fill="#14b86a"/>
+  <text x="380" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">OUTFIT CUỐI TUẦN</text>
+</svg>

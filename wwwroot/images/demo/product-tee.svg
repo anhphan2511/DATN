@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title">
+  <title id="title">Sản phẩm áo thun boxy minh họa</title>
+  <rect width="640" height="640" rx="52" fill="#f8fafc"/>
+  <circle cx="506" cy="116" r="108" fill="#14b86a" opacity="0.14"/>
+  <path d="M214 138h212l82 128-74 44-30-52v244H236V258l-30 52-74-44 82-128Z" fill="#111827"/>
+  <path d="M270 138c9 42 91 42 100 0" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <text x="320" y="574" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#111827">ÁO THUN BOXY</text>
+</svg>

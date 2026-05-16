@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title">
+  <title id="title">Danh mục quần áo nam minh họa</title>
+  <rect width="640" height="420" rx="40" fill="#e2e8f0"/>
+  <rect x="52" y="54" width="536" height="312" rx="34" fill="#f8fafc"/>
+  <path d="M225 96h190l56 110-50 34-28-48v130H247V192l-28 48-50-34 56-110Z" fill="#111827"/>
+  <path d="M278 96c12 26 72 26 84 0" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <rect x="74" y="306" width="180" height="28" rx="14" fill="#14b86a" opacity="0.24"/>
+  <text x="320" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#111827">BỘ SƯU TẬP NAM</text>
+</svg>

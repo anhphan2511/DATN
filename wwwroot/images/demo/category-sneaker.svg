@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title">
+  <title id="title">Danh mục sneaker minh họa</title>
+  <rect width="640" height="420" rx="40" fill="#eef9f4"/>
+  <circle cx="170" cy="110" r="90" fill="#14b86a" opacity="0.18"/>
+  <path d="M122 250c74 6 133-15 185-75 45 44 93 65 159 65 33 0 58 27 58 60v16H118c-35 0-56-39-36-68 11-16 25-2 40 2Z" fill="#111827"/>
+  <path d="M158 252c62 0 119-20 169-72" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M345 220h88" stroke="#14b86a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M365 250h72" stroke="#14b86a" stroke-width="14" stroke-linecap="round"/>
+  <text x="320" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#0c7a46">SNEAKER HẰNG NGÀY</text>
+</svg>

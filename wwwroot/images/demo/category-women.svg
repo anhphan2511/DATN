@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title">
+  <title id="title">Danh mục quần áo nữ minh họa</title>
+  <rect width="640" height="420" rx="40" fill="#fff1f2"/>
+  <circle cx="500" cy="80" r="96" fill="#fb7185" opacity="0.2"/>
+  <path d="M320 72c48 0 88 38 88 86 0 48-40 86-88 86s-88-38-88-86c0-48 40-86 88-86Z" fill="#f9a8d4"/>
+  <path d="M260 185h120l86 166H174l86-166Z" fill="#881337"/>
+  <path d="M284 185c6 26 66 26 72 0" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <rect x="86" y="72" width="156" height="28" rx="14" fill="#ffffff"/>
+  <text x="320" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#881337">BỘ SƯU TẬP NỮ</text>
+</svg>

@@ -1,139 +1,161 @@
-﻿@{
-    ViewData["Title"] = "Trang chu";
+@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="min-h-screen bg-gradient-to-b from-slate-50 via-white to-emerald-50/40 text-slate-900">
-    <section class="relative overflow-hidden rounded-3xl bg-slate-900 px-6 py-14 md:px-12">
-        <div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-brand-500/30 blur-3xl"></div>
-        <div class="absolute -bottom-20 -left-16 h-60 w-60 rounded-full bg-cyan-400/20 blur-3xl"></div>
+<div class="space-y-16">
+    <section class="relative overflow-hidden rounded-[2.5rem] bg-[#0f1115] text-white shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(20,184,106,0.28),transparent_28%),radial-gradient(circle_at_88%_8%,rgba(255,255,255,0.16),transparent_24%),linear-gradient(135deg,rgba(255,255,255,0.08),transparent_45%)]"></div>
+        <div class="relative grid min-h-[640px] gap-8 p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:p-10 xl:p-12">
+            <div class="flex flex-col justify-between gap-10">
+                <div>
+                    <div class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-brand-100 backdrop-blur">
+                        Xuân/Hè 2026
+                    </div>
+                    <h1 class="mt-8 max-w-4xl text-5xl font-black leading-[0.95] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
+                        Nâng cấp tủ đồ với outfit tối giản, hiện đại.
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-base leading-8 text-slate-200">
+                        DATN Wear mang đến quần áo và giày dép dễ phối, form đẹp và phù hợp nhịp sống mỗi ngày. Chọn nhanh theo bộ sưu tập, danh mục hoặc sản phẩm bán chạy.
+                    </p>
+                    <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+                        <a href="#featured" class="inline-flex justify-center rounded-full bg-white px-7 py-4 text-sm font-black text-slate-950 transition hover:bg-brand-100">Mua sản phẩm mới</a>
+                        <a href="#collections" class="inline-flex justify-center rounded-full border border-white/25 px-7 py-4 text-sm font-black text-white transition hover:bg-white/10">Xem bộ sưu tập</a>
+                    </div>
+                </div>
 
-        <div class="relative z-10 grid gap-10 md:grid-cols-2 md:items-center">
-            <div>
-                <p class="mb-4 inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">
-                    Flash Sale 50%
-                </p>
-                <h1 class="text-3xl font-black leading-tight text-white md:text-5xl">
-                    Mua sam thong minh,
-                    <span class="text-brand-100">nhan uu dai moi ngay</span>
-                </h1>
-                <p class="mt-4 max-w-xl text-sm text-slate-200 md:text-base">
-                    Hang ngan san pham chinh hang, giao nhanh 2h noi thanh va chinh sach doi tra 30 ngay.
-                    Bat dau don hang dau tien voi ma giam gia danh rieng cho ban.
-                </p>
-                <div class="mt-8 flex flex-wrap gap-3">
-                    <a href="#featured" class="rounded-xl bg-brand-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-600">Mua ngay</a>
-                    <a href="#categories" class="rounded-xl border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Xem danh muc</a>
-                </div>
-            </div>
-
-            <div class="grid gap-4 sm:grid-cols-2">
-                <div class="rounded-2xl bg-white/10 p-5 backdrop-blur">
-                    <p class="text-xs uppercase tracking-wide text-slate-300">Don hang hom nay</p>
-                    <p class="mt-2 text-3xl font-extrabold text-white">1,284</p>
-                    <p class="mt-1 text-xs text-emerald-200">Tang 18% so voi hom qua</p>
-                </div>
-                <div class="rounded-2xl bg-white p-5">
-                    <p class="text-xs uppercase tracking-wide text-slate-500">Khach hang hai long</p>
-                    <p class="mt-2 text-3xl font-extrabold text-slate-900">98.7%</p>
-                    <p class="mt-1 text-xs text-slate-500">Duoc danh gia 4.9/5</p>
-                </div>
-                <div class="rounded-2xl bg-white p-5 sm:col-span-2">
-                    <p class="text-xs uppercase tracking-wide text-slate-500">Uu dai noi bat</p>
-                    <div class="mt-3 flex flex-wrap gap-2">
-                        <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">Mien phi giao hang</span>
-                        <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">Hoan xu 5%</span>
-                        <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold text-cyan-700">Tra gop 0%</span>
+                <div class="grid gap-3 sm:grid-cols-3">
+                    <div class="rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+                        <p class="text-3xl font-black">120+</p>
+                        <p class="mt-1 text-sm text-slate-300">mẫu mới mỗi tháng</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+                        <p class="text-3xl font-black">7 ngay</p>
+                        <p class="mt-1 text-sm text-slate-300">đổi size linh hoạt</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+                        <p class="text-3xl font-black">499K</p>
+                        <p class="mt-1 text-sm text-slate-300">miễn phí vận chuyển</p>
                     </div>
                 </div>
             </div>
+
+            <div class="relative hidden lg:block">
+                <div class="absolute right-0 top-0 h-full w-[76%] rounded-[2rem] bg-gradient-to-br from-stone-100 via-white to-brand-100 shadow-2xl"></div>
+                <img src="/images/demo/hero-fashion.svg" alt="Ảnh minh họa outfit thời trang DATN Wear" class="absolute right-0 top-0 h-full w-[76%] rounded-[2rem] object-cover shadow-2xl" />
+                <div class="absolute left-0 top-14 w-72 rounded-[2rem] border border-white/20 bg-white/15 p-5 text-white shadow-xl backdrop-blur">
+                    <p class="text-xs font-bold uppercase tracking-[0.24em] text-brand-100">Lookbook</p>
+                    <p class="mt-16 text-2xl font-black leading-tight">Layer gọn gàng cho ngày thành thị</p>
+                </div>
+                <div class="absolute bottom-10 right-8 w-80 rounded-[2rem] bg-white p-5 text-slate-950 shadow-2xl">
+                    <p class="text-xs font-bold uppercase tracking-[0.24em] text-slate-400">Set nổi bật</p>
+                    <h2 class="mt-3 text-2xl font-black">Sơ mi linen + denim straight</h2>
+                    <div class="mt-5 flex items-center justify-between">
+                        <p class="font-black text-brand-700">1.328.000 VND</p>
+                        <a href="#featured" class="rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white">Xem</a>
+                    </div>
+                </div>
+                <div class="absolute bottom-32 left-16 flex h-48 w-48 items-center justify-center rounded-full border border-white/20 bg-slate-950/80 text-center text-xs font-black uppercase tracking-[0.3em] text-white shadow-2xl backdrop-blur">
+                    Cửa hàng<br />thời trang<br />hiện đại
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="categories" class="mt-10">
-        <div class="mb-4 flex items-center justify-between">
-            <h2 class="text-2xl font-bold">Danh muc pho bien</h2>
-            <a href="#" class="text-sm font-semibold text-brand-700 hover:text-brand-600">Xem tat ca</a>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Mobile</p>
-                <h3 class="mt-3 font-bold">Dien thoai</h3>
-                <p class="mt-1 text-sm text-slate-500">Tu iPhone den Android cao cap</p>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Laptop</p>
-                <h3 class="mt-3 font-bold">Laptop</h3>
-                <p class="mt-1 text-sm text-slate-500">May tinh hoc tap va lam viec</p>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Audio</p>
-                <h3 class="mt-3 font-bold">Phu kien</h3>
-                <p class="mt-1 text-sm text-slate-500">Tai nghe, ban phim, sac nhanh</p>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Wearable</p>
-                <h3 class="mt-3 font-bold">Do thong minh</h3>
-                <p class="mt-1 text-sm text-slate-500">Dong ho, thiet bi theo doi suc khoe</p>
-            </article>
+    <section class="grid gap-3 rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm sm:grid-cols-2 lg:grid-cols-4">
+        @foreach (var benefit in Model.Benefits)
+        {
+            <div class="rounded-3xl bg-slate-50 p-5">
+                <p class="font-black text-slate-950">@benefit.Title</p>
+                <p class="mt-1 text-sm text-slate-500">@benefit.Description</p>
+            </div>
+        }
+    </section>
+
+    <section id="categories">
+        @await Html.PartialAsync("_SectionHeader", new SectionHeaderViewModel
+        {
+            Title = "Mua sắm theo danh mục",
+            Description = "Chọn nhanh nhóm sản phẩm phù hợp: quần áo nam, quần áo nữ, sneaker, dép và phụ kiện.",
+            ActionText = "Xem tất cả",
+            ActionHref = "#categories"
+        })
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            @foreach (var category in Model.Categories)
+            {
+                @await Html.PartialAsync("_CategoryCard", category)
+            }
         </div>
     </section>
 
-    <section id="featured" class="mt-10">
-        <div class="mb-4 flex items-center justify-between">
-            <h2 class="text-2xl font-bold">San pham noi bat</h2>
-            <a href="#" class="text-sm font-semibold text-brand-700 hover:text-brand-600">Xem them</a>
+    <section id="collections" class="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="rounded-[2rem] bg-white p-6 shadow-sm sm:p-8">
+            <p class="text-sm font-black uppercase tracking-[0.24em] text-brand-700">Bộ sưu tập chọn lọc</p>
+            <h2 class="mt-4 text-4xl font-black tracking-[-0.04em] text-slate-950">Những món thiết yếu cho tủ đồ hiện đại</h2>
+            <p class="mt-4 text-sm leading-7 text-slate-500">
+                Tập trung vào những món đồ có khả năng phối lại cao: áo cơ bản, sơ mi, denim, sneaker và phụ kiện tối giản.
+            </p>
+            <a href="#featured" class="mt-7 inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-black text-white transition hover:bg-brand-700">Khám phá bộ sưu tập</a>
         </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+            @foreach (var collection in Model.Collections)
+            {
+                <article class="min-h-72 rounded-[2rem] p-6 shadow-sm @collection.CardClass">
+                    @if (!string.IsNullOrWhiteSpace(collection.ImageUrl))
+                    {
+                        <img src="@collection.ImageUrl" alt="@collection.Title" class="mb-5 h-40 w-full rounded-[1.5rem] object-cover" loading="lazy" />
+                    }
+                    <p class="text-xs font-black uppercase tracking-[0.24em] opacity-70">@collection.Label</p>
+                    <h3 class="mt-4 text-3xl font-black tracking-tight">@collection.Title</h3>
+                    <p class="mt-3 text-sm leading-6 opacity-75">@collection.Description</p>
+                    <a href="@collection.Href" class="mt-5 inline-flex text-sm font-black underline underline-offset-4">Xem bộ sưu tập</a>
+                </article>
+            }
+        </div>
+    </section>
+
+    <section id="featured">
+        @await Html.PartialAsync("_SectionHeader", new SectionHeaderViewModel
+        {
+            Title = "Sản phẩm đang được chọn nhiều",
+            Description = "Những item bán chạy, dễ mặc và phù hợp nhiều phong cách từ công sở đến dạo phố.",
+            ActionText = "Xem thêm",
+            ActionHref = "#featured"
+        })
         <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-            <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div class="rounded-xl bg-slate-100 p-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Smartphone</div>
-                <h3 class="mt-4 font-semibold">NovaPhone X Pro</h3>
-                <p class="mt-1 text-sm text-slate-500">Chip A18, camera 108MP</p>
-                <div class="mt-3 flex items-center justify-between">
-                    <p class="text-lg font-bold text-brand-700">19.990.000 VND</p>
-                    <button class="rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white">Them gio</button>
-                </div>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div class="rounded-xl bg-slate-100 p-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Laptop</div>
-                <h3 class="mt-4 font-semibold">ZenBook Air 14</h3>
-                <p class="mt-1 text-sm text-slate-500">Intel Ultra 7, RAM 16GB</p>
-                <div class="mt-3 flex items-center justify-between">
-                    <p class="text-lg font-bold text-brand-700">24.490.000 VND</p>
-                    <button class="rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white">Them gio</button>
-                </div>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div class="rounded-xl bg-slate-100 p-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Headphone</div>
-                <h3 class="mt-4 font-semibold">SonicBuds ANC</h3>
-                <p class="mt-1 text-sm text-slate-500">Khử ồn chủ động thế hệ mới</p>
-                <div class="mt-3 flex items-center justify-between">
-                    <p class="text-lg font-bold text-brand-700">2.390.000 VND</p>
-                    <button class="rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white">Them gio</button>
-                </div>
-            </article>
-            <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div class="rounded-xl bg-slate-100 p-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Smartwatch</div>
-                <h3 class="mt-4 font-semibold">FitWave Watch S</h3>
-                <p class="mt-1 text-sm text-slate-500">Theo doi suc khoe 24/7</p>
-                <div class="mt-3 flex items-center justify-between">
-                    <p class="text-lg font-bold text-brand-700">3.190.000 VND</p>
-                    <button class="rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white">Them gio</button>
-                </div>
-            </article>
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                @await Html.PartialAsync("_ProductCard", product)
+            }
         </div>
     </section>
 
-    <section class="mt-10 grid gap-4 rounded-3xl bg-white p-6 shadow-sm md:grid-cols-3 md:items-center">
+    <section id="sale" class="relative overflow-hidden rounded-[2.5rem] bg-slate-950 p-6 text-white shadow-2xl sm:p-8 lg:p-10">
+        <div class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-brand-500/30 blur-3xl"></div>
+        <div class="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+                <p class="text-sm font-black uppercase tracking-[0.24em] text-brand-100">Khuyến mãi giữa mùa</p>
+                <h2 class="mt-4 max-w-3xl text-4xl font-black tracking-[-0.04em] sm:text-5xl">Giảm đến 50% cho các item cuối mùa</h2>
+                <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-300">Áo, quần, sneaker và dép chọn lọc với số lượng có hạn. Thêm vào giỏ hàng sớm để giữ size phù hợp.</p>
+            </div>
+            <div class="rounded-[2rem] bg-white p-5 text-slate-950 shadow-xl">
+                <p class="text-sm font-bold text-slate-500">Mã ưu đãi</p>
+                <p class="mt-2 rounded-2xl border border-dashed border-slate-300 px-5 py-4 text-2xl font-black tracking-[0.18em]">DATN50</p>
+                <a href="#featured" class="mt-5 inline-flex w-full justify-center rounded-full bg-brand-500 px-6 py-3 text-sm font-black text-white transition hover:bg-brand-600">Săn sale ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid gap-6 rounded-[2.5rem] border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:p-8">
         <div>
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-700">Thanh vien moi</p>
-            <h3 class="mt-2 text-2xl font-extrabold">Nhan voucher 200.000 VND</h3>
-            <p class="mt-2 text-sm text-slate-500">Dang ky tai khoan ngay hom nay de nhan uu dai va cap nhat khuyen mai doc quyen.</p>
+            <p class="text-sm font-black uppercase tracking-[0.24em] text-brand-700">Thành viên DATN Wear</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-950">Nhận ưu đãi riêng và thông báo hàng mới</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-500">Đăng ký email để nhận voucher thành viên mới và các đợt mở bán sớm cho bộ sưu tập tiếp theo.</p>
         </div>
-        <div class="md:col-span-2">
-            <form class="flex flex-col gap-3 sm:flex-row">
-                <input type="email" placeholder="Nhap email cua ban" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm outline-none ring-brand-500 transition focus:ring" />
-                <button type="button" class="rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-600">Dang ky ngay</button>
-            </form>
-        </div>
+        <form class="flex flex-col gap-3 rounded-[2rem] bg-slate-50 p-3 sm:flex-row">
+            <input type="email" placeholder="email@example.com" class="w-full rounded-full border border-transparent bg-white px-5 py-4 text-sm outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15" />
+            <button type="button" class="rounded-full bg-slate-950 px-7 py-4 text-sm font-black text-white transition hover:bg-brand-700">Đăng ký</button>
+        </form>
     </section>
 </div>
